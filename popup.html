@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="timeline.css">
+    <title>Document</title>
+</head>
+
+<body style="text-align: center;width: 300px;height: 350px; margin-bottom: 30px;">
+    <h1>
+        Straightedge
+    </h1>
+    <div id="homeView">
+        <p>
+            You are currently on : <span id='currentURL' style="color:blue"> </span>.
+        </p>
+        <div>
+            <p>
+                Please click the Play button to start recording your actions.
+            </p>
+            <div>
+                <button style="background: transparent;border: none;" id='play'>
+                    <img style="width: 35%;" src="./assets/play.png" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="timelineParent">
+        <p>
+            The sequence of events that have occured during this session.
+        </p>
+        <div style="overflow: scroll;height: 200px;">
+            <ul class="timeline">
+
+                <!-- Item 1 -->
+                <!-- <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">click</span>
+                            <span class="time-wrapper"><span class="time">2013</span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">click</span>
+                            <span class="time-wrapper"><span class="time">2013</span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">click</span>
+                            <span class="time-wrapper"><span class="time">2013</span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="flag">click</span>
+                            <span class="time-wrapper"><span class="time">2013</span></span>
+                        </div>
+                    </div>
+                </li> -->
+
+            </ul>
+        </div>
+        <div>
+            <p>
+                click on the stop button to send recording.
+            </p>
+            <button style="background: transparent;border: none;" id='stop'>
+                <img style="width: 15%;" src="./assets/stop-button.png" alt="">
+            </button>
+        </div>
+    </div>
+    <footer style="width: 100%;position: absolute;bottom: 0;font-size: xx-small;">
+        <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a
+                href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+    </footer>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>

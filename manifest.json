@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Straightedge",
+    "version": "0.1",
+    "browser_action": {
+        "default_icon": "./assets/straightedge.png",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ],
+        "persistent": false
+    },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*"
+            ],
+            "js": [
+                "bundle.js",
+                "content.js"
+            ]
+        }
+    ]
+}
